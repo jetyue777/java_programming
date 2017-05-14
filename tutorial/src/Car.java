@@ -7,7 +7,7 @@ public class Car extends Robot {
     }
 
     public void start() {
-        System.out.println("car started");
+        System.out.println("car started.");
     }
 
 
