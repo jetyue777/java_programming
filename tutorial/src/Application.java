@@ -1,4 +1,7 @@
-class Person {
+import ocean.*;
+import ocean.plants.Seaweed;
+
+class Person implements Info {
 
     // Instance variables (data or "state")
     private String name;
@@ -19,8 +22,8 @@ class Person {
     public static int count;
 
 
-    public static void showInfo() {
-        System.out.println("hello!" + description);
+    public void showInfo() {
+        System.out.println("Person Name is: " + name);
     }
 
     public Person() {
@@ -67,6 +70,9 @@ class Person {
         return yearsLeft;
     }
 
+    public void greet() {
+        System.out.println("Hello there. ");
+    }
 
 }
 
@@ -82,7 +88,6 @@ public class Application {
 
         Person.description = "how are you doing?";
         System.out.println(Person.description);
-        Person.showInfo();
 
         System.out.println(Math.PI);
         System.out.println(Person.ok);
@@ -91,5 +96,25 @@ public class Application {
 
         System.out.println(person1.getId());
         System.out.println(person2.getId());
+
+        person1.showInfo();
+
+        Fish fish = new Fish();
+        Seaweed seaweed = new Seaweed();
+
+        Info info1 = new Machine();
+        info1.showInfo();
+
+        Info info2 = new Person();
+        info2.showInfo();
+
+        System.out.println();
+
+        outputInfo(person1);
+        outputInfo(info1);
+    }
+
+    private static void outputInfo(Info info) {
+        info.showInfo();
     }
 }

@@ -38,5 +38,8 @@ public class App {
         System.out.println(obj);
 
         System.out.println(robot1);
+
+        Plant plant = new Plant();
+        System.out.println(plant.name);
     }
 }

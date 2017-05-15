@@ -10,5 +10,9 @@ public class Car extends Robot {
         System.out.println("car started.");
     }
 
+    private Plant plant = new Plant();
+    public Car() {
+        System.out.println(plant.size);
+    }
 
 }
