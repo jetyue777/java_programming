@@ -15,7 +15,7 @@ public class App {
 
         double d = 3.33;
         int i = (int)d;
-        System.out.println(i);  //outputs 3
+        System.out.println(i);  //outputs 3;
 
 
 
