@@ -1,22 +1,30 @@
-import polymorphism.Plant;
-import polymorphism.Tree;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class App {
     public static void main(String[] args) {
 
-        Plant plant1 = new Plant();
-        Tree tree = new Tree();
+        ////////////////Before Java 5 ////////////////////
+        ArrayList list = new ArrayList();
+        list.add("apple");
+        list.add("banana");
+        list.add("orange");
 
-        Plant plant2 = plant1;
-        Plant plant3 = tree;
+        String fruit = (String) list.get(2);
+        System.out.println(fruit);
 
-        plant2.grow();
-        plant3.grow();
+        //Generics is introduced (modern style)
+        ArrayList<String> strings= new ArrayList<>();
 
-        double d = 3.33;
-        int i = (int)d;
-        System.out.println(i);  //outputs 3;
+        strings.add("cat");
+        strings.add("dog");
+        strings.add("bill");
 
+        String animal = strings.get(1);
+        System.out.println(animal);
+
+        //////////////There can be more than one type argument////////////
+        HashMap<Integer, String> map = new HashMap<>();
 
 
     }
