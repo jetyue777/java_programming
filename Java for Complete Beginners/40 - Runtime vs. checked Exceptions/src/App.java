@@ -9,7 +9,7 @@ public class App {
          
         // Arithmetic exception ... (divide by zero)
         int value = 7/0;
- 
+
         // You can actually handle RuntimeExceptions if you want to;
         // for example, here we handle an ArrayIndexOutOfBoundsException
         String[] texts = { "one", "two", "three" };
@@ -17,6 +17,7 @@ public class App {
         try {
             System.out.println(texts[3]);
         } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("find exception");
             System.out.println(e.toString());
         }
     }
