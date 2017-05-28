@@ -10,7 +10,23 @@ public class App {
         Map<Integer, String> linkedHashMap = new LinkedHashMap<Integer, String>();
         Map<Integer, String> treeMap = new TreeMap<Integer, String>();
          
+        testMap(linkedHashMap);
+//        9: fox
+//        4: cat
+//        8: dog
+//        1: giraffe
+//        0: swan
+//        15: bear
+//        6: snake
+
         testMap(treeMap);
+//        0: swan
+//        1: giraffe
+//        4: cat
+//        6: snake
+//        8: dog
+//        9: fox
+//        15: bear
     }
      
     public static void testMap(Map<Integer, String> map) {

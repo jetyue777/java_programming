@@ -16,6 +16,7 @@ public class App {
         /*
          * LinkedLists consists of elements where each element
          * has a reference to the previous and next element
+         * traverse/index through a linkedList is slower than arrayList
          * [0]->[1]->[2] ....
          *    <-   <-
          */
@@ -33,17 +34,19 @@ public class App {
          
         long start = System.currentTimeMillis();
          
-        /*
-        // Add items at end of list
+
+       /* //Add items at end of list
         for(int i=0; i<1E5; i++) {
             list.add(i);
-        }
-        */
+        }  //short for ArrayList, slower for LinkedList*/
+
          
         // Add items elsewhere in list
         for(int i=0; i<1E5; i++) {
             list.add(0, i);
         }
+        //Time taken: 3135 ms for ArrayList
+        //Time taken: 6 ms for LinkedList
          
         long end = System.currentTimeMillis();
          
